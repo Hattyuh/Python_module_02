@@ -17,10 +17,10 @@ def test_temperature() -> None:
                 f"invalid literal for int() with base 10: '{value}'"
                 )
         print()
+    print("All tests completed - program didn't crash!")
 
 
 if __name__ == "__main__":
     print("=== Garden Temperature ===")
     print()
     test_temperature()
-    print("All tests completed - program didn't crash!")
