@@ -25,7 +25,7 @@ def test_error_types() -> None:
         ) as error:
             print(
                 f"Caught {error.__class__.__name__}: {error}"
-                )
+            )
     print()
     print("All error types tested successfully!")
 

@@ -50,4 +50,5 @@ def test_errors() -> None:
 
 
 if __name__ == "__main__":
+    print("=== Custom Garden Errors Demo ===")
     test_errors()
