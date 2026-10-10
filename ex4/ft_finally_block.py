@@ -1,10 +1,10 @@
 class GardenError(Exception):
-    def __init__(self, message="Unknown garden error"):
+    def __init__(self, message:str = "Unknown garden error") -> None:
         super().__init__(message)
 
 
 class PlantError(GardenError):
-    def __init__(self, message="Unknown plant error"):
+    def __init__(self, message: str = "Unknown plant error") -> None:
         super().__init__(message)
 
 
@@ -17,7 +17,7 @@ def water_plant(plant_name: str) -> None:
         )
 
 
-def test_watering_system(plants: list[str]):
+def test_watering_system(plants: list[str]) -> None:
     print("Opening watering system")
     try:
         for plant in plants:
