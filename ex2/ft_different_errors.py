@@ -1,4 +1,4 @@
-def garden_operation(operation_number: int) -> None:
+def garden_operations(operation_number: int) -> None:
     if operation_number == 0:
         int("abc")
     elif operation_number == 1:
@@ -16,7 +16,7 @@ def test_error_types() -> None:
     for operation in test_operations:
         print(f"Testing operation {operation}...")
         try:
-            garden_operation(operation)
+            garden_operations(operation)
         except (
             ValueError,
             ZeroDivisionError,
