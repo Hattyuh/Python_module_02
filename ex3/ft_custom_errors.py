@@ -1,6 +1,3 @@
-import typing
-
-
 class GardenError(Exception):
     def __init__(self, message: str = "Unknown garden error") -> None:
         super().__init__(message)
@@ -25,7 +22,7 @@ def check_water() -> None:
 
 
 def test_errors() -> None:
-    test_functions: list[typing.Callable[[], None]] = [
+    test_functions = [
         check_plant,
         check_water
     ]
@@ -42,7 +39,7 @@ def test_errors() -> None:
                 func()
             except (error_type) as error:
                 print(
-                    f"Caught {error.__class__.__name__}: {error}"
+                    f"Caught {error_type.__name__}: {error}"
                 )
             except GardenError:
                 pass
