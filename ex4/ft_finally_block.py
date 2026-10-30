@@ -24,9 +24,9 @@ def test_watering_system(plants: list[str]) -> None:
             water_plant(plant)
     except PlantError as error:
         print(f"Caught {error.__class__.__name__}: {error}")
+        print(".. ending tests and returning to main")
         return
     finally:
-        print(".. ending tests and returning to main")
         print("Closing watering system")
 
 
